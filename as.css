@@ -1,0 +1,107 @@
+div {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 90px;
+      background-color:#0E3333;
+      height: 100vh;
+      font-family: monospace;
+    }
+    .app {
+      width: 70%;
+    }
+
+    @media (max-width:768px) {
+      .app {
+        width: 80%;
+      }
+    }
+    .app h1 {
+      color: red;
+      font-size: 40px;
+      padding: 10px 0;
+      text-align: center;
+      border-radius: .10rem .10rem 0 0;
+      background-color: #3ED3DD;
+      font-family: monospace;
+    }
+    .app form {
+      display: flex;
+      width: 100%;
+      background-color: #262e4c;
+    }
+    .app form input {
+      border: none;
+      background-color: #DD5AD7;
+      font-size: 18px;
+      color: white;
+      padding: 10px;
+      width: 90%;
+    }
+
+    .app form button {
+      border: none;
+      color: white;
+      background-color: #C18C20;
+      font-size: 25px;
+      font-weight: 600;
+      height: 53px;
+      width: 10%;
+    }
+
+    .app ul {
+      list-style: none;
+      color: #F4E969;
+      padding: 0;
+    }
+
+    .app ul li {
+      padding: 10px;
+      background-color: #211F1F;
+      border-bottom: 1px solid #3a4674;
+    }
+
+    .check {
+      width: 0.8em;
+      height: 0.8em;
+      cursor: pointer;
+      border-radius: 50%;
+      background-color: white;
+      border: 1px solid rgb(255, 255, 255);
+      -webkit-appearance: none;
+    }
+
+    .check:checked {
+      background-color: #1D92D1;
+    }
+
+    .task {
+      font-size: 18px;
+      padding: 0 10px;
+      width: fit-content;
+      background: transparent;
+      border: none;
+      color: #7CAA08;
+    }
+
+    .task:focus {
+      outline: none;
+    }
+    .app ul li i {
+      float: right;
+      cursor: pointer;
+    }
+
+    .app ul li i:hover {
+      color: rgb(255, 82, 82);
+    }
+    .completed {
+      color: rgba(192, 192, 192, 0.8);
+      text-decoration: line-through;
+    }
